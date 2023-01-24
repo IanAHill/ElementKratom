@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kreon&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+    <nav id="nav-bar">
+        <img src = "{% static 'images/logo.png' %}" id="logo">
+        <ul id="nav-links">
+            <li>Kratom Overview</li>
+            <li>Products</li>
+            <li>Lab Reports</li>
+            <li id="contact-button">Contact</li>
+        </ul>
+    </nav>
+
+    <main id="page-content">
+        <img src = "{% static 'images/KratomLeaves3.jpg' %}" id="banner-image">
+        <p id="banner-text" class="fade-in">Welcome to Element Kratom.</p>
+
+        <div id="text-container">
+            <p> Element Kratom is a Pennsylvania based family owned Kratom company. <br><br>
+                After seeing sub-par Kratom at less than reasonable prices across the country for years.<br><br>
+                We became determined to deliver the best Kratom at the best price possible. Element Kratom is the quality you deserve.<br><br>
+                Our staff uses the products that we make. We understand how important quality and consistency are to our valued customers.<br><br>
+                We test every batch for microbials, metals and potency prior to import and after arrival.<br><br>
+                Element Kratom is honest to goodness 100% pure unadulterated kratom.<br><br>
+                We think you will find our Kratom is more potent than the average varieties on the market.<br><br>
+                Our Mitragynine content exceeds most brands and expectations.<br><br>
+                I assure you that every batch we bring to market is top notch.<br><br>
+                Although you may notice slight variations in the color of your favorite strain. Rest assured this is naturally occurring due to seasonal changes in growing conditions.<br><br><br><br>
+                
+                Our family at Element Kratom invites you to join us in our Kratom revolution.<br><br><br><br>
+                
+                
+                Sincerely,
+                
+                The Martin Family</p>
+        </div>
+    </main>
+
+</body>
+</html>
