@@ -1,31 +1,7 @@
+{% extends base.html %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="{% static 'style.css' %}">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kreon&display=swap" rel="stylesheet">
-
-    <title>Element Kratom</title>
-</head>
-<body>
-    <nav id="nav-bar">
-        <a href = "{% url 'home' %}"><img src = "{% static 'images/logo.png' %}" id="logo"></a>
-        <ul id="nav-links">
-            <li><a href = "{% url 'products' %}">Kratom Overview</a></li>
-            <li><a href = "home.html">Products</a></li>
-            <li><a href = "home.html">Lab Reports</a></li>
-            <li><a href = "home.html">Contact</a></li>
-        </ul>
-        
-    </nav>
-
-    <main class="page-content">
+{% block content %}
         <img src = "{% static 'images/KratomLeaves3.jpg' %}" id="banner-image">
         <p id="banner-text" class="fade-in">Welcome to Element Kratom.</p>
 
@@ -35,10 +11,5 @@
                 Element Kratom is honest to goodness 100% pure unadulterated Kratom.<br><br>
                 Our family at Element Kratom invites you to join us in our Kratom revolution.</p>
         </div>
-    </main>
-    <footer>
-       <p>©MAG Industries - All Rights Reserved</p>
-    </footer>
+{% endblock %}
 
-</body>
-</html>
