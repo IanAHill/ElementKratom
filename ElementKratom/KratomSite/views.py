@@ -14,3 +14,6 @@ def products(request):
 
 def product_page(request):
     return render(request, "product-page.html", {})
+
+def kratom_overview(request):
+    return render(request, "kratom-overview.html")

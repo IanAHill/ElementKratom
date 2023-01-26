@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
 }
-
+.drop-shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+}
 
 a{
   text-decoration: none;
@@ -81,16 +83,29 @@ footer{
 .text-container {
     margin-top: 50px;
     margin-bottom: 100px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 300px;
+    margin-right: 300px;
     padding: 20px;
     width:fit-content;
     background: rgb(204, 204, 204);
     background: rgba(204, 204, 204, 0.2);
     border-radius: 25px;
-    
     text-align: center;
-    color:darkslategrey
+    color:darkslategrey;
+}
+
+.text-container-products {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  width:fit-content;
+  background: rgb(204, 204, 204);
+  background: rgba(204, 204, 204, 0.2);
+  border-radius: 25px;
+  text-align: center;
+  color:darkslategrey;
 }
 
 
@@ -154,23 +169,23 @@ footer{
   }
 
 
-.red-bali:hover{
-  color:darkred;
-  transition: 0.6s ease;
-}
-.maeng-da:hover{
-  color:darkblue;
-  transition: 0.6s ease;
-}
-.white-indo:hover{
-  color:grey;
-  transition: 0.6s ease;
-}
-.green-malay:hover{
-  color:darkgreen;
-  transition: 0.6s ease;
-}
-
+  .red-bali:hover{
+    color:darkred;
+    transition: 0.6s ease;
+  }
+  .maeng-da:hover{
+    color:darkblue;
+    transition: 0.6s ease;
+  }
+  .white-indo:hover{
+    color:grey;
+    transition: 0.6s ease;
+  }
+  .green-malay:hover{
+    color:darkgreen;
+    transition: 0.6s ease;
+  }
+  
 
 
   @keyframes FadeIn {

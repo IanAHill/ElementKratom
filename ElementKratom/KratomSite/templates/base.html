@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kreon&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'style.css' %}">
+    <script src="https://kit.fontawesome.com/0c447f0469.js" crossorigin="anonymous"></script>
     <title>{% block title %}Element Kratom{% endblock %}</title>
 </head>
 
@@ -17,14 +18,13 @@
 <body>
     
     <nav id="nav-bar">
-        <a href = "{% url 'home' %}" class="nav-a"><img src = "{% static 'images/logo.png' %}" id="logo"></a>
+       <div><a href = "{% url 'home' %}" class="nav-a"><img src = "{% static 'images/logo.png' %}" id="logo"></a></div>
         <ul id="nav-links">
-            <li><a href = "{% url 'products' %}" class="nav-a">Kratom Overview</a></li>
+            <li><a href = "{% url 'kratom-overview' %}" class="nav-a">Kratom Overview</a></li>
             <li><a href = "{% url 'products' %}" class="nav-a">Products</a></li>
             <li><a href = "home.html" class="nav-a">Lab Reports</a></li>
             <li><a href = "home.html" class="nav-a">Contact</a></li>
         </ul>
-        
     </nav>
 
     <main class="page-content">
