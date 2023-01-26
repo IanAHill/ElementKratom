@@ -1,36 +1,61 @@
+{% extends 'base.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="{% static 'style.css' %}">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kreon&display=swap" rel="stylesheet">
 
-    <title>Element Kratom</title>
-</head>
-<body>
-    <nav id="nav-bar">
-        <a href = "{% url 'home' %}"><img src = "{% static 'images/logo.png' %}" id="logo"></a>
-        <ul id="nav-links">
-            <li><a href = "{% url 'products' %}">Kratom Overview</a></li>
-            <li><a href = "home.html">Products</a></li>
-            <li><a href = "home.html">Lab Reports</a></li>
-            <li><a href = "home.html">Contact</a></li>
-        </ul>
-        
-    </nav>
+{% block content %}
+<h1 class='title'>Our Products</h1>
 
-    <main class="page-content">
-        <div class='text-container'><p>ajsklfklsdf</p></div>
-    </main>
-    <footer>
-       <p>©MAG Industries - All Rights Reserved</p>
-    </footer>
+<div class="text-container">
+    <h1>Element Kratom 25 Count Capsules</h1>
+    
+    <div class="product-container">
+        <div class="product red-bali">
+            <a href="{% url 'product_page' %}"><img src="{% static 'images/25RedPouch.png' %}"></a>
+            <a href="{% url 'product_page' %}"><h2>Red Bali</h2></a>
+        </div>
 
-</body>
-</html>
+        <div class="product maeng-da">
+            <img src="{% static 'images/25BluePouch.png' %}">
+            <h2>Maeng Da</h2>
+        </div>
+
+        <div class="product white-indo">
+            <img src="{% static 'images/25WhitePouch.png' %}">
+            <h2>White Indo</h2>
+        </div>
+
+        <div class="product green-malay">
+            <img src="{% static 'images/25GreenPouch.png' %}">
+            <h2>Green Malay</h2>
+        </div>
+    </div>
+</div>
+
+<div class="text-container">
+    <h1>Element Kratom 50 Count Capsules</h1>
+    <div class="product-container">
+        <div class="product red-bali">
+            <img src="{% static 'images/50RedPouch.png' %}">
+            <h2>Red Bali</h2>
+        </div>
+
+        <div class="product maeng-da">
+            <img src="{% static 'images/50BluePouch.png' %}">
+            <h2>Maeng Da</h2>
+        </div>
+
+        <div class="product white-indo">
+            <img src="{% static 'images/50WhitePouch.png' %}">
+            <h2>White Indo</h2>
+        </div>
+
+        <div class="product green-malay">
+            <img src="{% static 'images/50GreenPouch.png' %}">
+            <h2>Green Malay</h2>
+        </div>
+    </div>
+</div>
+
+
+</div>
+{% endblock %}

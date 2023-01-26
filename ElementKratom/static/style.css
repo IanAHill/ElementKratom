@@ -2,10 +2,15 @@
     margin: 0;
     padding: 0;
 }
-a {
+a{
+  text-decoration: none;
+  color:inherit;
+}
+.nav-a {
     color:white;
     text-decoration: none;
 }
+
 body {
     background-image:url(images/background.jpg) ;
     font-family: "Kreon", serif;
@@ -15,12 +20,12 @@ body {
     background: #202020;
     display: flex;
     justify-content: space-between;
-    width: 100VW;
+    width: 100%;
 }
 footer{
     background-color: #202020;
     height: 50px;
-    width: 100vw;
+    width: 100%;
     text-align: center;
     align-items: center;
     color:gray;
@@ -47,18 +52,18 @@ footer{
 
     
 }
-a:hover{
+.nav-a:hover{
     text-decoration: underline;
     color: gray;
     transition: 0.7s ease;
 }
 
 .page-content {
-    width: 100vw;
+    width: 100%;
 }
 
 #banner-image{
-    width: 100vw;
+    width: 100%;
 }
 #banner-text{
   position: absolute;
@@ -84,17 +89,84 @@ a:hover{
     text-align: center;
     color:darkslategrey
 }
-#mission {
-    font-size: x-large;
+
+
+.title {
+  text-align: center;
+  font-size: 400%;
+  text-decoration:underline;
+  color:darkslategray;
 }
 
+.product-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-detail{
+  display: flex;
+}
+
+.button{
+  border-style: solid;
+  padding: 10px;
+  border-radius: 25px;
+}
+.button:hover{
+  background-color: white;
+  transition: 0.4s ease;
+}
+
+.checkout-div {
+  margin-left: 50px;
+  width: 400px;
+  display: flex;
+  justify-content: space-around;
+
+}
 
 .fade-in {
     animation-name: FadeIn;
     animation-duration: 3s;
     transition-timing-function: linear;
   }
-  
+  .what-is-kratom{
+    display:flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: space-around;
+    text-align: center;
+  }
+  .flex-text-box{
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding: 20px;
+    width:fit-content;
+    background: rgb(204, 204, 204);
+    background: rgba(204, 204, 204, 0.2);
+    border-radius: 25px;
+    text-align: center;
+    color:darkslategrey
+  }
+
+.red-bali:hover{
+  color:darkred;
+  transition: 0.6s ease;
+}
+.maeng-da:hover{
+  color:darkblue;
+  transition: 0.6s ease;
+}
+.white-indo:hover{
+  color:grey;
+  transition: 0.6s ease;
+}
+.green-malay:hover{
+  color:darkgreen;
+  transition: 0.6s ease;
+}
+
   @keyframes FadeIn {
     0% {
       opacity: 0;

@@ -17,12 +17,12 @@
 <body>
     
     <nav id="nav-bar">
-        <a href = "{% url 'home' %}"><img src = "{% static 'images/logo.png' %}" id="logo"></a>
+        <a href = "{% url 'home' %}" class="nav-a"><img src = "{% static 'images/logo.png' %}" id="logo"></a>
         <ul id="nav-links">
-            <li><a href = "{% url 'products' %}">Kratom Overview</a></li>
-            <li><a href = "home.html">Products</a></li>
-            <li><a href = "home.html">Lab Reports</a></li>
-            <li><a href = "home.html">Contact</a></li>
+            <li><a href = "{% url 'products' %}" class="nav-a">Kratom Overview</a></li>
+            <li><a href = "{% url 'products' %}" class="nav-a">Products</a></li>
+            <li><a href = "home.html" class="nav-a">Lab Reports</a></li>
+            <li><a href = "home.html" class="nav-a">Contact</a></li>
         </ul>
         
     </nav>

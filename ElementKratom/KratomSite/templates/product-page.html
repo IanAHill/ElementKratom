@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+
+<div class="text-container">
+
+
+    <div class="product-detail">
+        <img src="{% static 'images/25RedPouch.png' %}">
+        <div>
+            <h2>Experience the power</h2>
+            <h3>of Element Kratom as this Red Bali ignites your senses like a wildfire</h3><br>
+            <h4>SUPPLEMENT FACTS</h4>
+            <p>Grams Per Capsule: ~0.5 grams</p>
+            <p>Serving Size: 2-8 capsules*</p>
+            <p>Servings Per Bag: 25-100</p><BR><BR>
+            <h3>STRONGEST KRATOM ON THE MARKET</h3><br><br>
+            <div class="checkout-div">
+                <img src="{% static 'images/cart.png' %}" width=10%>
+                <h3 class = "button">Add To Shopping Cart</h3>
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endblock %}
